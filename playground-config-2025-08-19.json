@@ -1,0 +1,83 @@
+{
+  "inputs": {
+    "model": "gpt-5",
+    "group": "default",
+    "temperature": 0.7,
+    "top_p": 1,
+    "max_tokens": 4096,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "seed": null,
+    "stream": true,
+    "imageEnabled": false,
+    "imageUrls": [
+      ""
+    ]
+  },
+  "parameterEnabled": {
+    "temperature": true,
+    "top_p": true,
+    "max_tokens": false,
+    "frequency_penalty": true,
+    "presence_penalty": true,
+    "seed": false
+  },
+  "showDebugPanel": false,
+  "customRequestMode": false,
+  "customRequestBody": "",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello",
+      "createAt": 1755566063742,
+      "id": "6"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi! How can I help you today?",
+      "createAt": 1755566063742,
+      "id": "5",
+      "reasoningContent": "",
+      "isReasoningExpanded": false,
+      "isThinkingComplete": true,
+      "hasAutoCollapsed": true,
+      "status": "complete"
+    },
+    {
+      "role": "user",
+      "content": "я хочу стать AI Engineer \nЯ школьник учусь в 11 классе \nЧто мне делать что бы стать самым топовым AI engeneer мирового уровня",
+      "createAt": 1755566134523,
+      "id": "9"
+    },
+    {
+      "role": "assistant",
+      "content": "Отличная цель! Путь к уровню “world-class AI Engineer” — это сочетание сильной математики, CS‑фундамента, глубокого ML/DL, инженерии систем и умения делать заметные результаты (проекты, open‑source, статьи). Ниже — короткая, но насыщенная дорожная карта с приоритетами.\n\nКлючевые навыки (чек‑лист)\n- Математика: линейная алгебра, матан, вероятность/статистика, оптимизация.\n- Информатика: структуры данных и алгоритмы, вычислительная сложность, ОС/сетевое взаимодействие.\n- Программирование: Python (обязательно), плюс C++ или Rust; чистый код, тесты, профилирование.\n- Deep Learning: PyTorch, JAX; трансформеры, CNN, RNN, Diffusion, GNN, RL.\n- Системы: Linux, Git, Docker, CUDA/GPUs, параллелизм, распределённые вычисления.\n- MLOps и продакшн: MLflow/W&B, DVC, CI/CD, FastAPI/gRPC, оркестрация (Airflow/Prefect), мониторинг.\n- Data: SQL, Pandas/Polars, Spark; чистка данных, фичи, аннотация, лицензии.\n- Английский: чтение статей и общение на уровне свободного.\n- Софтскиллы: техническое письмо, публичные доклады, работа в команде.\n\nПошаговый план\n\n0) Ближайшие 3–6 месяцев (11 класс)\n- База:\n  - Python: сделать 2–3 серьёзных проекта + 50–100 задач на алгоритмы (LeetCode/Codeforces).\n  - Инструменты: Linux (терминал), Git (ветки, PR), Docker (собрать образ), базовый CUDA (курс/туториал).\n- Математика: линал (MIT 18.06, Strang или 3Blue1Brown), вероятность (MIT 18.05), производные/градиенты.\n- ML старт:\n  - Курс: Andrew Ng ML + fast.ai Part 1 или “Dive into Deep Learning”.\n  - Фреймворк: PyTorch. Реализуй backprop и небольшой MLP/ConvNet “с нуля”.\n- Мини‑проекты (портфолио):\n  - Классификатор изображений с PyTorch + отчёт об ошибках.\n  - Текстовая модель: классификация или эмбеддинги + поиск (FAISS).\n  - Деплой: FastAPI + Docker, простой мониторинг.\n- Английский: 30–60 минут в день (словарь, просмотр лекций на англ).\n\n1) Лето перед вузом\n- Алгосы: CS50 или Berkeley CS61A/CS61B; основы C++.\n- Глубже в DL: Stanford CS231n (CV) или HuggingFace Course (NLP, трансформеры).\n- Kaggle: 2–3 соревнования до серебра; оформляй ноутбуки и README.\n- Open‑source: 1–2 PR в библиотеки (PyTorch/Lightning/HF/драйверы).\n\n2) 1–2 курс вуза\n- Университет: цель — сильная математика + алгоритмы + системы.\n  - Курсы: Алгоритмы (MIT 6.006), ОС, сети, БД, комп.архитектура.\n  - Математика: оптимизация (Boyd), вероятность/статистика (Murphy PML: Intro).\n- DL/LLM практика:\n  - Реализовать трансформер с нуля, обучить на TinyShakespeare/другом датасете.\n  - LoRA/QLoRA fine‑tuning открытой LLM (Llama/Mistral), оценка perplexity/MT‑bench.\n  - RAG: эмбеддинги (E5), векторная БД (FAISS/Milvus), сравнить качества, метрики (MTEB).\n- Системное мышление:\n  - Распределённое обучение: DDP/FSDP/ZeRO; профилирование, mixed precision.\n  - Оптимизация инференса: ONNX/TensorRT, квантование, vLLM, llama.cpp.\n- Портфолио: 3–5 тщательно оформленных репо с тестами, докой, “model card”.\n\n3) 3–4 курс и далее\n- Специализация: выбери нишу и стань “узким лидером”.\n  - LLM‑системы: оркестрация, RAG‑оптимизация, оценка, безопасность/guardrails.\n  - Vision/Multimodal: CLIP, diffusion, video‑генерация, ускорение инференса.\n  - RL/Decision making: SpinningUp, практические задачи.\n  - Рекомендательные системы/табличные данные на масштабе.\n- Исследование и вклад:\n  - Репродукция статьи с arXiv/PapersWithCode, улучшение baseline, честная оценка.\n  - Пишите техблоги, делайте доклады, публикуйте датасеты/библиотеки.\n  - Соревнования: NeurIPS/KDD/RecSys/ODE, Kaggle до GM — плюс к репутации.\n- Инженерия производства:\n  - Полный MLOps цикл: данные→обучение→регистрация→деплой→мониторинг→алертинг→A/B.\n  - Надёжность и стоимость: автоскейлинг, спот‑инстансы, профилирование, кеши.\n- Стажировки: целиться в сильные команды (исследовательские и продуктовые). В РФ: МФТИ/ВШЭ/ИТМО/МГУ, ШАД (после вуза), Yandex/Sber/JetBrains/VK/Robust/GPN. За рубежом: стажировки в BigTech/стартапах.\n\nЕженедельная рутина (минимум)\n- 5–10 ч математика и алгоритмы.\n- 10–15 ч код: PyTorch/инфра, эксперименты, профилирование.\n- 2–3 ч чтение статей: 1 статья/неделю, конспект + мини‑эксперимент.\n- 1 публичный артефакт: пост, ноутбук, PR или отчет по проекту.\n\nПроекты‑маяки (которые “продают” тебя)\n- С нуля: автодифференцирование + обучить небольшую сеть.\n- Собственный трансформер + тренировка на своём корпусе; сравнение с baseline HF.\n- LoRA‑тонкая настройка LLM + инференс через vLLM/TensorRT‑LLM; latency/throughput отчёт.\n- RAG‑система с оценкой (precision@k, nDCG, QA‑метрики) и сравнением эмбеддингов/индексов.\n- Diffusion‑модель на своём датасете + ускорение инференса.\n- Полный прод: FastAPI + Docker + CI/CD + мониторинг (prometheus/grafana) + канареечный деплой.\n\nРесурсы (ориентиры по названиям)\n- База: CS61A/61B, MIT 6.006; MIT 18.06 (Strang), 18.05; 3Blue1Brown.\n- ML/DL: Andrew Ng ML, fast.ai, Dive into Deep Learning, Stanford CS231n, CS224N, HuggingFace Course.\n- Книги: Goodfellow “Deep Learning”; Murphy “Probabilistic ML” (2022/23); Bishop PRML; Boyd “Convex Optimization”; Jurafsky & Martin (NLP).\n- RL: Sutton & Barto; OpenAI SpinningUp.\n- Практика: Kaggle, PapersWithCode, arXiv‑sanity.\n- Инфраструктура: PyTorch, JAX, CUDA, Triton, MLflow/W&B, DVC, Airflow/Prefect, FastAPI, ONNX/TensorRT, vLLM.\n\nКак стать “мирового уровня”\n- Глубина + системность: умение и придумать, и довести до продакшна, и измерить эффект.\n- Ниша и репутация: выбери область и регулярно делай заметные вклады (open‑source, статьи, доклады).\n- Качество артефактов: чистый код, воспроизводимость, метрики, честные сравнения, абляции.\n- Сеть контактов: менторы, комьюнити, конференции, стажировки.\n- Английский — ежедневно. Пиши и выступай.\n\nЕсли хочешь, опишу персональный план на 3–6 месяцев с разбивкой по неделям под твой текущий уровень (что уже знаешь, сколько времени в день есть, какой ПК/GPU доступен).",
+      "createAt": 1755566134523,
+      "id": "8",
+      "reasoningContent": "",
+      "isReasoningExpanded": false,
+      "isThinkingComplete": true,
+      "hasAutoCollapsed": true,
+      "status": "complete"
+    },
+    {
+      "role": "user",
+      "content": "я вообще полный ноль \nНо не мог бы ты писать некоторые вещи на английском просто я учусь в школе где вся наука препадаеть на английском \nПо программированию полный ноль \nПо математике полный ноль в знаниях много дыр поэтому ноль\nПо английcкому b1 ",
+      "createAt": 1755566437590,
+      "id": "12"
+    },
+    {
+      "role": "assistant",
+      "content": "Отлично, что честно описал стартовую точку. С нуля — реально. Сделаем простой, понятный план на 6 месяцев, с упором на базу (математика + программирование + английский). Часть терминов и заданий дам на английском, чтобы ты привыкал.\n\nКак работать\n- Время: 2–3 часа в день, 6 дней в неделю. Если можешь больше — отлично, но стабильность важнее.\n- Правило 3 блоков в день (по 40–60 минут каждый):\n  1) Math basics\n  2) Python programming\n  3) English for STEM\n- Инструменты: вести конспект, задачи и прогресс в одном месте (Notion/Google Docs). Еженедельный отчет: что выучил, что сделал, чем доказал.\n\nСтартовый набор (Setup) — 1–2 дня\n- Установи: VS Code, Python 3.11+, Git, GitHub аккаунт.\n- Windows: можно без WSL. Скачай python.org, в VS Code поставь “Python” extension. Создай venv: python -m venv .venv; активируй; pip install numpy pandas matplotlib jupyter pytest.\n- Git быстрый старт:\n  - git config --global user.name \"Your Name\"; git config --global user.email \"you@mail.com\"\n  - На GitHub создай репозиторий learn-ai-journey, сделай первый README.md на английском: “I am starting from zero. Goal: AI Engineer.”\n- Английский-правило: все имена переменных, коммиты и README — на английском.\n\nПервые 8 недель (очень конкретно)\nНеделя 1. Python basics + English\n- Python: переменные, типы, ввод/вывод, операторы, условия, циклы, функции.\n- Курс: “Automate the Boring Stuff with Python”, главы 1–4 (EN). Альтернатива (RU): Stepik “Поколение Python: курс для начинающих (Курс 1)”.\n- Практика: 20 задач уровня easy на Codewars (8 kyu) или HackerRank (Warmup).\n- Mini-project: “Number Guessing Game” (console).\n- English (30–45 мин/день): BBC Learning English + сделай словарь (Anki) из 20–30 терминов в неделю.\n- EN terms this week: variable, integer, string, boolean, loop, function, condition, input/output, bug, debug.\n\nНеделя 2. Структуры данных\n- Python: lists, tuples, dicts, sets; функции глубже; list/dict comprehensions.\n- Практика: 25 задач на списки/строки (Codewars 7–8 kyu).\n- Mini-project: “To‑Do CLI app” с сохранением в JSON.\n- Тесты: установи pytest; напиши 3–5 тестов к функциям.\n- EN terms: list, dictionary, key, value, slice, iterate, test, assert, refactor.\n\nНеделя 3. Файлы, модули, исключения, Git\n- Python: файлы (read/write), модули, импорт, исключения try/except.\n- Git: ветки, коммиты, pull request (сделай PR в свой же репо).\n- Mini-project: “Expense Tracker” (учет расходов в CSV), команды: add/list/summary.\n- Практика: 20 задач на строки/файлы.\n- EN terms: module, package, exception, file path, repository, branch, commit message.\n\nНеделя 4. ООП и основы алгоритмов\n- ООП: class, object, methods, __init__, простое наследование.\n- Алгоритмы: сложность O(1)/O(n), поиск линейный, сортировки обзор.\n- Mini-project: перепиши Expense Tracker в виде класса; добавь простые тесты и README с инструкцией запуска.\n- Практика: 15 задач на массивы/строки + 5 задач на время выполнения (O-нотация — устно оценивать).\n- EN terms: class, object, method, attribute, complexity, runtime, optimize.\n\nНеделя 5. Введение в данные: NumPy, Pandas, визуализация\n- NumPy: массивы, операции, broadcasting.\n- Pandas: Series, DataFrame, чтение CSV, фильтрация, groupby.\n- Matplotlib/Seaborn: простые графики.\n- Mini-project: “Data Analysis of Your Expenses” — графики расходов по дням/категориям.\n- EN terms: array, vector, matrix, data frame, filter, aggregate, plot.\n\nНеделя 6. Базовая математика для ML\n- Algebra refresh: выражения, уравнения, функции, графики, степени/логарифмы.\n- Ресурс: Khan Academy Algebra I/II (EN) или Фоксфорд/Stepik (RU).\n- Python: реши 20 задач на алгоритмы (строки/массивы, two pointers).\n- Mini-project: “Unit Converter” или “Simple Calculator” с тестами.\n- EN terms: equation, function, variable, graph, domain, range.\n\nНеделя 7. Линейная алгебра и векторы\n- 3Blue1Brown: Essence of Linear Algebra, эпизоды 1–4 (EN, рус. субтитры ок).\n- Практика: реализуй dot product и matrix multiplication на Python без NumPy, затем сравни с NumPy.\n- Визуализация: нарисуй 2D векторы, повороты.\n- EN terms: vector, dot product, matrix, transpose, dimension.\n\nНеделя 8. Вероятность и симуляции\n- Базовая вероятность: события, независимость, ожидание, дисперсия.\n- Симуляции в Python: random, Monte Carlo.\n- Mini-project: смоделируй броски монеты/кубиков; оцени вероятности; визуализируй.\n- EN terms: probability, random variable, expectation, variance, simulation.\n\nЧто должно быть к концу 2 месяцев\n- 3–5 маленьких проектов в GitHub с README на английском и тестами.\n- 150+ решенных простых задач (Codewars/HackerRank).\n- База по NumPy/Pandas, основы алгебры/вероятности.\n\nМесяцы 3–4. Переходим к ML (очень базово)\n- Курс: “Introduction to Machine Learning with scikit‑learn” (Hugging Face course, EN) или “Stepik: Введение в машинное обучение” (RU).\n- Проекты:\n  - Kaggle Titanic (классика): загрузка данных, чистка, baseline, кросс‑валидация.\n  - Kaggle House Prices (регрессия).\n- Темы: train/test split, k‑fold, метрики accuracy/MAE, переобучение.\n- Практика Python: ещё 100 задач (перемешай структуры + простые алгоритмы).\n- Математика: продолжай линал (векторы, матрицы, нормы), производная (идея градиента).\n- Английский: смотри лекции про ML с субтитрами, пиши конспект на английском.\n\nМесяцы 5–6. Переход к DL и системам\n- PyTorch basics: тензоры, autograd, оптимизаторы; обучи MLP на MNIST.\n- Проект: “From Scratch” — реализуй линейный слой и ReLU без фреймворков; сравни с PyTorch.\n- Инфраструктура: Docker базовый образ, запусти свой FastAPI сервис + инференс простой модели scikit‑learn.\n- Данные и MLOps базово: MLflow или W&B для логов экспериментов.\n- Английский: веди “Model card” на английском для каждого проекта: цель, данные, метрики, ограничения.\n\nМинимальное железо и альтернативы\n- На старте достаточно обычного ноутбука. Для ML/DL используй Google Colab или Kaggle Notebooks (бесплатные GPU).\n- Если планируешь свой ПК: 16 ГБ RAM, SSD 512 ГБ, видео 3060 12 ГБ — хороший старт, но не обязательно сразу.\n\nЕжедневная рутина (пример)\n- 45 мин математика (Khan Academy + задачи из тетради).\n- 60–90 мин Python (курс + практические задачи + мини‑проект).\n- 30–45 мин English (лексика для CS, чтение README, конспект на английском).\n- Каждое воскресенье: рефлексия и план на неделю; обнови GitHub.\n\nМатериалы для нуля\n- Programming (EN): Automate the Boring Stuff with Python; Python Crash Course.\n- Programming (RU): Stepik “Поколение Python”; CS50x (после 4–6 недель баз).\n- Math (EN): Khan Academy Algebra, Precalculus, Probability; 3Blue1Brown (Essence of Linear Algebra, Essence of Calculus).\n- Math (RU): Фоксфорд базовая математика; Stepik “Линейная алгебра”.\n- Data/ML (EN): Kaggle Learn Micro-Courses; scikit-learn User Guide; Hugging Face Course (intro).\n- Tools: Git (Pro Git book), VS Code docs, FastAPI docs.\n\nКак быстро подтянуть английский до B2\n- Каждый проект — README, issue, commit messages только на английском.\n- Словарь: делай Anki с терминами по темам недели (20–30 слов/нед).\n- Письмо: раз в неделю пиши короткий technical summary на 150–200 слов о том, что сделал. Попроси меня проверить и улучшить стиль.\n- Аудирование: 15 минут в день — короткие видео (3Blue1Brown, freeCodeCamp).\n\nТипичные ошибки и как их избежать\n- Слишком рано нырять в LLM: сначала база. ML начни на 3-м месяце, DL на 5-м.\n- Переписывать чужой код без понимания: всегда делай “explain in your own words” в README.\n- Отсутствие практики: минимум 20–30 задач в неделю + 1 мини‑проект.\n- Боязнь английского: делай всё окружение на английском, будут быстрые gains.\n\nЧто будет “видимым результатом” через 6 месяцев\n- 6–10 репозиториев: утилиты на Python, анализ данных, 2 проекта с ML, 1 маленькая нейросеть в PyTorch, один сервис на FastAPI.\n- 400–500 решенных задач начального уровня.\n- Конспекты на английском, базовое портфолио для стажировки/олимпиад/хакатонов.\n\nХочешь — сделаю персональный недельный план под твои условия. Ответь на 5 вопросов:\n1) Сколько часов в день реально можешь уделять (по будням/выходным)?\n2) Какой у тебя ПК/ноутбук (оперативка, видеокарта), Windows/macOS/Linux?\n3) Готов ставить Linux/WSL или остаемся на Windows?\n4) Что интереснее: NLP, компьютерное зрение, табличные данные, сервисы?\n5) Хочешь ли, чтобы я каждую неделю давал конкретный To‑Do лист и проверял твой README/резюме на английском?",
+      "createAt": 1755566437590,
+      "id": "11",
+      "reasoningContent": "",
+      "isReasoningExpanded": false,
+      "isThinkingComplete": true,
+      "hasAutoCollapsed": true,
+      "status": "complete"
+    }
+  ],
+  "exportTime": "2025-08-19T02:02:40.687Z",
+  "version": "1.0"
+}
