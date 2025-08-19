@@ -1,2 +1,2 @@
 # Learn-AI-journey
-Lear
+## I am starting from zero. Goal:Ai-engineer
